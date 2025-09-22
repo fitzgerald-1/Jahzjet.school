@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog - Jahzjet Children's Outreact School</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="./animations.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../Images/logo.png" alt="Jahzjet School Logo" width="60" height="60">
+                <span>Jahzjet School</span>
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="index.html" class="learn-more-btn">Back to Home</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</header>
+
+<section class="about-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Our <span>Blog</span></h1>
+            <p>Insights, stories, and updates from the Jahzjet School community</p>
+        </div>
+    </div>
+</section>
+
+<section class="latest-blog-posts">
+    <div class="container">
+        <h2>Latest <span>Blog Posts</span></h2>
+        <p>Stay updated with the latest news, educational insights, and stories from our school community</p>
+        <div class="blog-posts-grid">
+            <article class="blog-post">
+                <img src="../Images/Event.jpg" alt="Junior & Senior Prom" />
+                <h3>Junior & Senior Prom: A Night to Remember</h3>
+                <p>Posted by Martha Smart | <time datetime="2024-12-01">December 1, 2024</time></p>
+                <p>Our annual Junior & Senior Prom was a spectacular celebration of our students' achievements and growth. The evening was filled with joy, laughter, and memorable moments...</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </article>
+            <article class="blog-post">
+                <img src="../Images/1757884987400.jpg" alt="Senior Dinner Night" />
+                <h3>Senior Dinner Night: Celebrating Milestones</h3>
+                <p>Posted by Smart Fitzgerald | <time datetime="2024-11-25">November 25, 2024</time></p>
+                <p>The Senior Dinner Night brought together students, parents, and teachers to celebrate the remarkable journey of our graduating class. It was an evening of reflection and pride...</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </article>
+            <article class="blog-post">
+                <img src="../Images/1757885098265.jpg" alt="Graduation Ceremony" />
+                <h3>Graduation Ceremony 2024: New Beginnings</h3>
+                <p>Posted by Jane Smith | <time datetime="2024-11-20">November 20, 2024</time></p>
+                <p>This year's graduation ceremony marked the culmination of years of hard work and dedication. Our students stepped forward to receive their well-deserved recognition...</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </article>
+            <article class="blog-post">
+                <img src="../Images/1757884834237.jpg" alt="New Academic Year" />
+                <h3>Welcome to the New Academic Year 2024-2025</h3>
+                <p>Posted by Principal Johnson | <time datetime="2024-11-15">November 15, 2024</time></p>
+                <p>As we begin another exciting academic year, we're thrilled to welcome new students and reunite with returning ones. This year promises to be filled with learning and growth...</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </article>
+            <article class="blog-post">
+                <img src="../Images/1757884840671.jpg" alt="Science Week" />
+                <h3>Science Week: Exploring the Wonders of Discovery</h3>
+                <p>Posted by Science Teacher | <time datetime="2024-11-10">November 10, 2024</time></p>
+                <p>Our annual Science Week was a tremendous success, with students engaging in hands-on experiments and demonstrations that brought scientific concepts to life...</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </article>
+            <article class="blog-post">
+                <img src="../Images/1757884845922.jpg" alt="Art Competition" />
+                <h3>Annual Art Competition Winners Announced</h3>
+                <p>Posted by Art Department | <time datetime="2024-11-05">November 5, 2024</time></p>
+                <p>Congratulations to all participants in this year's art competition! The creativity and talent displayed by our students never cease to amaze us...</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </article>
+        </div>
+        <button class="view-all-btn">View All Posts</button>
+    </div>
+</section>
+
+<section class="our-values">
+    <div class="container">
+        <h2>Blog <span>Categories</span></h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Academic Updates</h3>
+                <p>Latest news about curriculum changes, academic achievements, and educational developments at our school.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Event Coverage</h3>
+                <p>Comprehensive coverage of school events, ceremonies, competitions, and special activities.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Student Stories</h3>
+                <p>Heartwarming stories and achievements of our students, showcasing their growth and success.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Educational Tips</h3>
+                <p>Helpful tips and insights for parents and students on learning, development, and education.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-events">
+    <div class="container">
+        <h2>Featured <span>Stories</span></h2>
+        <div class="education-events-content">
+            <div class="video-section">
+               <img src="../Images/1757884834237.jpg" alt="Featured Story" style="width: 100%; height: 260px; object-fit: cover; border-radius: 5px;" />
+                <div class="video-caption">Read Our Most Popular Posts</div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The school blog keeps us connected with everything happening at Jahzjet. It's wonderful to read about our children's achievements and school activities."</p>
+                    <div class="testimonial-author">
+                        <img src="../Images/Fitzgerald.jpg" alt="Parent Testimonial" />
+                        <div>
+                            <strong>Sarah Williams</strong>
+                            <span>Parent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"As an alumni, I love reading the blog to stay updated with my former school's progress and the success of current students."</p>
+                    <div class="testimonial-author">
+                        <img src="../Images/Reubenna.jpg" alt="Alumni Testimonial" />
+                        <div>
+                            <strong>Michael Davis</strong>
+                            <span>Alumni</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <div class="container">
+        <h2>Subscribe to <span>Our Blog</span></h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Updates</h3>
+                <p>Get notified when we publish new blog posts and articles</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-rss"></i>
+                </div>
+                <h3>RSS Feed</h3>
+                <p>Subscribe to our RSS feed for automatic updates</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Social Media</h3>
+                <p>Follow us on social media for real-time updates</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <h3>Contribute</h3>
+                <p>Have a story to share? Contact us to contribute to our blog</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div class="footer-logo"><img src="../Images/logo.png" alt="" width="90px"></div>
+        <div class="footer-newsletter">
+            <h3>News Letters</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" aria-label="Email" />
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+        </div>
+        <div class="footer-events">
+            <h3>Recent Posts</h3>
+            <div class="footer-event-item">
+                <p>December 1, 2024</p>
+                <p>Junior & Senior Prom: A Night to Remember</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="footer-flickr">
+                <h3>Our Flickr</h3>
+                <div class="flickr-images">
+                    <img src="../Images/Our Flickr1.jpg" alt="Flickr 1" />
+                    <img src="../Images/Our Flickr2.jfif" alt="Flickr 2" />
+                    <img src="../Images/Our Flickr3.jpg" alt="Flickr 3" />
+                    <img src="../Images/Our Flickr4.jpg" alt="Flickr 4" />
+                    <img src="../Images/Our Flickr5.jfif" alt="Flickr 5" />
+                </div>
+            </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 All Rights Reserved. Jahzjet Children's Outreact Mission School</p>
+    </div>
+</footer>
+
+</body>
+</html>

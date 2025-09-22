@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - Jahzjet Children's Outreact School</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="./animations.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../Images/logo.png" alt="Jahzjet School Logo" width="60" height="60">
+                <span>Jahzjet School</span>
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="index.html" class="learn-more-btn">Back to Home</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</header>
+
+<section class="about-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Photo <span>Gallery</span></h1>
+            <p>Capturing precious moments and memories from our school community</p>
+        </div>
+    </div>
+</section>
+
+<section class="photo-gallery">
+    <div class="container">
+        <h2>Our <span>Gallery</span></h2>
+        <p>Explore our collection of memorable moments, events, and activities</p>
+
+        <!-- Gallery Categories -->
+        <div class="gallery-categories" style="margin-bottom: 40px; text-align: center;">
+            <button class="btn-primary" onclick="showCategory('all')">All Photos</button>
+            <button class="btn-primary" onclick="showCategory('events')" style="margin-left: 10px;">Events</button>
+            <button class="btn-primary" onclick="showCategory('classroom')" style="margin-left: 10px;">Classroom</button>
+            <button class="btn-primary" onclick="showCategory('sports')" style="margin-left: 10px;">Sports</button>
+            <button class="btn-primary" onclick="showCategory('graduation')" style="margin-left: 10px;">Graduation</button>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="../Images/1757884834237.jpg" alt="School Campus" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884840671.jpg" alt="Students Learning" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884845922.jpg" alt="Library Activities" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884872913.jpg" alt="Science Laboratory" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884873452.jpg" alt="Computer Lab" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884879135.jpg" alt="Art Class" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884896107.jpg" alt="Music Class" class="gallery-img" data-category="classroom">
+            <img src="../Images/1757884903965.jpg" alt="Playground Fun" class="gallery-img" data-category="sports">
+            <img src="../Images/1757884991706.jpg" alt="Sports Day" class="gallery-img" data-category="sports">
+            <img src="../Images/1757884957588.jpg" alt="Team Games" class="gallery-img" data-category="sports">
+            <img src="../Images/1757884950907.jpg" alt="Physical Education" class="gallery-img" data-category="sports">
+            <img src="../Images/1757884987400.jpg" alt="Senior Dinner Night" class="gallery-img" data-category="events">
+            <img src="../Images/1757885098265.jpg" alt="Graduation Ceremony" class="gallery-img" data-category="graduation">
+            <img src="../Images/Event.jpg" alt="Junior & Senior Prom" class="gallery-img" data-category="events">
+            <img src="../Images/Event1.jpg" alt="Annual Science Fair" class="gallery-img" data-category="events">
+            <img src="../Images/Event4.jpg" alt="Cultural Day" class="gallery-img" data-category="events">
+            <img src="../Images/Event2.jpg" alt="Sports Competition" class="gallery-img" data-category="sports">
+            <img src="../Images/Princi.jpg" alt="School Principal" class="gallery-img" data-category="staff">
+            <img src="../Images/Fitzgerald.jpg" alt="Teacher and Students" class="gallery-img" data-category="classroom">
+            <img src="../Images/Reubenna.jpg" alt="Student Activities" class="gallery-img" data-category="classroom">
+        </div>
+        <button class="see-more-btn" onclick="showMoreImages()">See More</button>
+        <button class="see-less-btn" style="display:none;" onclick="showLessImages()">See Less</button>
+    </div>
+</section>
+
+<section class="our-values">
+    <div class="container">
+        <h2>Gallery <span>Categories</span></h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Classroom Moments</h3>
+                <p>Everyday learning experiences, classroom activities, and educational moments that capture the essence of our teaching philosophy.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Special Events</h3>
+                <p>Memorable events, celebrations, ceremonies, and special occasions that bring our community together.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <h3>Sports & Activities</h3>
+                <p>Physical education, sports competitions, games, and recreational activities that promote health and teamwork.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Achievement Moments</h3>
+                <p>Graduation ceremonies, award presentations, and moments of recognition for our students' accomplishments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-events">
+    <div class="container">
+        <h2>Featured <span>Albums</span></h2>
+        <div class="education-events-content">
+            <div class="video-section">
+               <img src="../Images/1757884834237.jpg" alt="Featured Album" style="width: 100%; height: 260px; object-fit: cover; border-radius: 5px;" />
+                <div class="video-caption">Browse Our Photo Collections</div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The photo gallery brings back so many wonderful memories. It's amazing to see how our children have grown and all the activities they've participated in."</p>
+                    <div class="testimonial-author">
+                        <img src="../Images/Fitzgerald.jpg" alt="Parent Testimonial" />
+                        <div>
+                            <strong>Linda Thompson</strong>
+                            <span>Parent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"As an alumni, seeing the current photos makes me proud of how the school has grown and maintained its commitment to excellence."</p>
+                    <div class="testimonial-author">
+                        <img src="../Images/Reubenna.jpg" alt="Alumni Testimonial" />
+                        <div>
+                            <strong>Robert Johnson</strong>
+                            <span>Alumni</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <div class="container">
+        <h2>Share Your <span>Photos</span></h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-upload"></i>
+                </div>
+                <h3>Submit Photos</h3>
+                <p>Have great photos from school events? Share them with us for inclusion in our gallery</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3>Download</h3>
+                <p>Download high-resolution versions of your favorite photos for personal use</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Social Media</h3>
+                <p>Follow us on social media to see photos in real-time and share your favorites</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Help & Support</h3>
+                <p>Need help accessing photos or have questions about our gallery? Contact us</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div class="footer-logo"><img src="../Images/logo.png" alt="" width="90px"></div>
+        <div class="footer-newsletter">
+            <h3>News Letters</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" aria-label="Email" />
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+        </div>
+        <div class="footer-events">
+            <h3>Recent Photos</h3>
+            <div class="footer-event-item">
+                <p>December 2024</p>
+                <p>Graduation Ceremony 2024</p>
+                <a href="#">View Gallery</a>
+            </div>
+        </div>
+         <div class="footer-flickr">
+                <h3>Our Flickr</h3>
+                <div class="flickr-images">
+                    <img src="../Images/Our Flickr1.jpg" alt="Flickr 1" />
+                    <img src="../Images/Our Flickr2.jfif" alt="Flickr 2" />
+                    <img src="../Images/Our Flickr3.jpg" alt="Flickr 3" />
+                    <img src="../Images/Our Flickr4.jpg" alt="Flickr 4" />
+                    <img src="../Images/Our Flickr5.jfif" alt="Flickr 5" />
+                </div>
+            </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 All Rights Reserved. Jahzjet Children's Outreact Mission School</p>
+    </div>
+</footer>
+
+<script>
+function showCategory(category) {
+    const images = document.querySelectorAll('.gallery-img');
+    const seeMoreBtn = document.querySelector('.see-more-btn');
+    const seeLessBtn = document.querySelector('.see-less-btn');
+
+    images.forEach(img => {
+        if (category === 'all' || img.dataset.category === category) {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    });
+
+    // Reset visibility states
+    seeMoreBtn.style.display = 'inline-block';
+    seeLessBtn.style.display = 'none';
+
+    // Show only first 8 images for filtered results
+    let visibleCount = 0;
+    images.forEach(img => {
+        if (img.style.display !== 'none' && visibleCount < 8) {
+            img.style.display = 'block';
+            visibleCount++;
+        } else if (img.style.display !== 'none' && visibleCount >= 8) {
+            img.style.display = 'none';
+        }
+    });
+}
+
+function showMoreImages() {
+    const images = document.querySelectorAll('.gallery-img');
+    const seeMoreBtn = document.querySelector('.see-more-btn');
+    const seeLessBtn = document.querySelector('.see-less-btn');
+
+    images.forEach(img => {
+        if (img.style.display === 'none') {
+            img.style.display = 'block';
+        }
+    });
+
+    seeMoreBtn.style.display = 'none';
+    seeLessBtn.style.display = 'inline-block';
+}
+
+function showLessImages() {
+    const images = document.querySelectorAll('.gallery-img');
+    const seeMoreBtn = document.querySelector('.see-more-btn');
+    const seeLessBtn = document.querySelector('.see-less-btn');
+
+    let visibleCount = 0;
+    images.forEach(img => {
+        if (visibleCount < 8) {
+            img.style.display = 'block';
+            visibleCount++;
+        } else {
+            img.style.display = 'none';
+        }
+    });
+
+    seeMoreBtn.style.display = 'inline-block';
+    seeLessBtn.style.display = 'none';
+}
+</script>
+
+</body>
+</html>

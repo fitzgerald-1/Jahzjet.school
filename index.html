@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jahzjet Children's Outreact School</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="./animations.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+<header class="site-header animate-on-load">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../Images/logo.png" alt="Jahzjet School Logo" width="80" height="d80">
+                <span>Jahzjet School</span>
+            </a>
+        </div>
+
+
+
+        <nav class="main-nav">
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-learn-more"><a class="learn-more-btn" href="about.html">Learn More</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="about.html" class="learn-more-btn">Learn More</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" onclick="" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</header>
+    <!-- Login Modal -->
+    <!-- <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="login-close">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- Signup Modal -->
+    <!-- <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="signup-close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- Image Viewer Modal -->
+    <div id="image-modal" class="modal">
+      <div class="modal-content image-modal-content">
+        <span class="close-btn" id="image-close">&times;</span>
+        <img id="modal-image" src="" alt="Gallery Image" />
+      </div>
+    </div>
+
+    <section class="hero-banner">
+        <div class="container hero-content animate-on-load animate-delay-1">
+            <h1>Welcome<br />To<br /><span> <strong>Jahzjet</strong></span></h1>
+        </div>
+    </section>
+<br><br><br><br>
+<div class="main">
+  <h2>Responsive Card Grid Layout</h2>
+  <ul class="cards">
+        <li class="cards_item animate-on-load animate-delay-2">
+            <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+        <li class="cards_item animate-on-load animate-delay-3">
+            <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+        <li class="cards_item animate-on-load animate-delay-4">
+            <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+        <li class="cards_item animate-on-load animate-delay-5">
+            <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+        <li class="cards_item animate-on-load animate-delay-6">
+            <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+        <li class="cards_item animate-on-load animate-delay-7">
+            <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<br><br>
+<!-- <h3 class="made_by">Made with ♡</h3> -->
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <div class="carousel" mask>
+    <div>
+    </div>
+    <div class="meet_our_alumina">
+        <h2>Meet Our Alumni</h2>
+    </div>
+	<article>
+		<img src="../Images/Fitzgerald.jpg" alt="Alumni 1">
+		<h2>Fitzgerald Khanwhie</h2>
+		<div>
+			<p>Graduated in 2020 with honors in Mathematics. Currently pursuing a degree in Computer Science at the University of Liberia. "Jahzjet School provided me with the strong foundation I needed to excel in higher education."</p>
+
+			<a href="#">Read more</a>
+		</div>
+	</article>
+
+	<article>
+		<img src="../Images/Reubenna.jpg" alt="Alumni 2">
+		<h2>Rebunna Reeves</h2>
+		<div>
+			<p>Class of 2019 valedictorian. Now working as a teacher at a local elementary school. "The values and education I received at Jahzjet shaped my career and commitment to education."</p>
+
+			<a href="#">Read more</a>
+		</div>
+	</article>
+
+	<article>
+		<img src="../Images/shelton.jpg" alt="Alumni 3">
+		<h2>Shelton V.S. Saywarayne</h2>
+		<div>
+			<p>Graduated in 2018 and now runs a successful tech startup in Monrovia. "The innovative teaching methods at Jahzjet prepared me for the challenges of entrepreneurship."</p>
+
+			<a href="#">Read more</a>
+		</div>
+	</article>
+
+	<article>
+		<img src="../Images/poe.jpg" alt="Alumni 4">
+		<h2>Serreta Poe</h2>
+		<div>
+			<p>Class of 2021 graduate currently studying Medicine at the University of Liberia. "The science program at Jahzjet ignited my passion for healthcare and helping others."</p>
+
+			<a href="#">Read more</a>
+		</div>
+	</article>
+
+	<article>
+		<img src="../Images/tec.jpg" alt="Alumni 5">
+		<h2>Morain Ma</h2>
+		<div>
+			<p>2019 graduate working as a community development officer. "Jahzjet taught me the importance of giving back to the community and making a positive impact."</p>
+
+			<a href="#">Read more</a>
+		</div>
+	</article>
+
+	<article>
+		<img src="../Images/Vic. prin.jpg" alt="Alumni 6">
+		<h2>Victoria Johnson</h2>
+		<div>
+			<p>Class of 2017, now a successful business owner. "The leadership skills and confidence I gained at Jahzjet have been instrumental in building my career."</p>
+
+			<a href="#">Read more</a>
+		</div>
+	</article>
+
+</div> -->
+
+    <section class="online-courses-promo">
+        <div class="container promo-grid">
+            <div class="promo-text">
+                <h3>Learn More About Us</h3>
+                <p>Jahzjet Children's Outreact School was founded with a vision to
+                     provide exceptional educational experiences that nurture young 
+                     minds and prepare them for a bright future. Our mission is to create a learning environment
+                     where every child can discover their potential and develop into confident, capable individuals.</p>
+                <a href="./about.html" class="btn-primary">Find More About Us</a>
+            </div>
+            <div class="promo-image">
+                <img src="../Images/More.jpg" alt="Aboutus" />
+            </div>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <h2>Our <span>Events</span></h2>
+            <button class="view-all-btn">View All</button>
+            <div class="events-list">
+                <article class="event-item">
+                    <img src="../Images/Event1.jpg" alt="Science In The New Era" />
+                    <div class="event-info">
+                        <h3>Play Ground New Era</h3>
+                        <p><time datetime="2016-12-06">06 Dec 2016</time> | Monrovia, Liberia</p>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article class="event-item">
+                    <img src="../Images/Event4.jpg" alt="Student Exchange Program" />
+                    <div class="event-info">
+                        <h3>Student Dinner Night Sessions</h3>
+                        <p><time datetime="2016-12-06">06 Dec 2016</time> | Monrovia, Liberia</p>
+                        <p>Business it will frequently occur that pleasure has to be repudiated and annoyances accepted. The wise man therefore always holds.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article class="event-item">
+                    <img src="../Images/Event2.jpg" alt="Chicago Architecture" />
+                    <div class="event-info">
+                        <h3>Game and Sport</h3>
+                        <p><time datetime="2016-12-06">06 Dec 2016</time> | Monrovia, Liberia</p>
+                        <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-subscription">
+        <div class="container subscription-content">
+            <h2>Over 3,000+ students trust us world wide. Get free online courses tips, Subscribe us</h2>
+            <!-- <form class="subscription-form">
+                <select name="category" aria-label="Category">
+                    <option value="">All Categories</option>
+                    <option value="science">Science</option>
+                    <option value="arts">Arts</option>
+                    <option value="technology">Technology</option>
+                </select>
+                <select name="level" aria-label="Course Level">
+                    <option value="">Course Level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <input type="text" name="keyword" placeholder="Course Keyword ..." aria-label="Course Keyword" />
+                <button type="submit" class="btn-primary">Search Course</button>
+            </form> -->
+            <div class="subscription-features">
+                <div>Over 500 Student Friendly Learn Skills</div>
+                <div>More Than 2000 Online Courses Available</div>
+                <div>Learn Skill On Any Device Anytime</div>
+                <div>More Than 200 Instructors Available</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-events">
+        <div class="container">
+            <h2>Our <span>Education Events</span></h2>
+            <div class="education-events-content">
+                <div class="video-section">
+                   <video width="420" height="260" controls poster="poster-image.jpg" src="../Video/lv_0_20250917122527.mp4">
+                   </video>
+                    <!-- <button class="play-btn" aria-label="Play Video">&#9658;</button> -->
+                    <div class="video-caption">Your Career Starts Here</div>
+                </div>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness fully researched growth.</p>
+                        <div class="testimonial-author">
+                            <img src="../Images/tec.jpg" alt="Timothy Dixon" />
+                            <div>
+                                <strong>Timothy Dixon</strong>
+                                <span>Design Staff</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness fully researched growth.</p>
+                        <div class="testimonial-author">
+                            <img src="../Images/Fitzgerald.jpg" alt="Josh Austin" />
+                            <div>
+                                <strong>Josh Austin</strong>
+                                <span>Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-blog-posts">
+        <div class="container">
+            <h2>Latest <span>Blog Post</span></h2>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting</p>
+            <div class="blog-posts-grid">
+                <article class="blog-post">
+                    <img src="../Images/Event.jpg" alt="Blog 1" />
+                    <h3>Junior & Senior Prom</h3>
+                    <p>Posted by Martha Smart</p>
+                    <p>Doloremque laudantium totam...</p>
+                </article>
+                <article class="blog-post">
+                    <img src="../Images/1757884987400.jpg" alt="Blog 2" />
+                    <h3>Serior Dinner Night</h3>
+                    <p>Posted by Smart Fitzgerald</p>
+                    <p>Minus veniam quis molestiae...</p>
+                </article>
+                <article class="blog-post">
+                    <img src="../Images/1757885098265.jpg" alt="Blog 3" />
+                    <h3>Graduation Ceremony</h3>
+                    <p>Posted by Jane Smith</p>
+                    <p>Perspiciatis unde omnis iste...</p>
+                </article>
+            </div>
+            <button class="view-all-btn">View All Post</button>
+        </div>
+    </section>
+
+            <section class="photo-gallery">
+                <div class="container">
+                    <h2>Photo <span>Gallery</span></h2>
+                    <p>Explore our collection of images</p>
+                    <div class="gallery-grid">
+                        <img src="../Images/1757884834237.jpg" alt="Gallery Image 1" class="gallery-img">
+                        <img src="../Images/1757884840671.jpg" alt="Gallery Image 2" class="gallery-img">
+                        <img src="../Images/1757884845922.jpg" alt="Gallery Image 3" class="gallery-img">
+                        <img src="../Images/1757884872913.jpg" alt="Gallery Image 4" class="gallery-img">
+                        <img src="../Images/1757884873452.jpg" alt="Gallery Image 5" class="gallery-img hidden">
+                        <img src="../Images/1757884879135.jpg" alt="Gallery Image 6" class="gallery-img hidden">
+                        <img src="../Images/1757884896107.jpg" alt="Gallery Image 7" class="gallery-img hidden">
+                        <img src="../Images/1757884903965.jpg" alt="Gallery Image 8" class="gallery-img hidden">
+                        <img src="../Images/1757884991706.jpg" alt="Gallery Image 9" class="gallery-img hidden">
+                        <img src="../Images/1757884957588.jpg" alt="Gallery Image 10" class="gallery-img hidden">
+                        <img src="../Images/1757884950907.jpg" alt="Gallery Image 11" class="gallery-img hidden">
+                        <img src="../Images/1757884987400.jpg" alt="Gallery Image 12" class="gallery-img hidden">
+                    </div>
+                    <button class="see-more-btn">See More</button>
+                    <button class="see-less-btn" style="display:none;">See Less</button>
+                </div>
+            </section>
+
+    <section class="our-staff">
+        <div class="container">
+            <h2>Meet Our <span>Staff</span></h2>
+            <p>Our dedicated team committed to excellence in education</p>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <img src="../Images/Princi.jpg" alt="Principal" class="staff-img">
+                    <h3>Jeff Zeon</h3>
+                    <p>Principal</p>
+                    <p>Leading our school with vision and dedication.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="../Images/Vic. prin.jpg" alt="Vice Principal" class="staff-img">
+                    <h3>Jane Smith</h3>
+                    <p>Vice Principal</p>
+                    <p>Supporting academic excellence and student welfare.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="../Images/Fitzgerald.jpg" alt="Teacher" class="staff-img">
+                    <h3>Michael Johnson</h3>
+                    <p>Mathematics Teacher</p>
+                    <p>Passionate about making math fun and accessible.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="../Images/shelton.jpg" alt="Teacher" class="staff-img">
+                    <h3>Emily Davis</h3>
+                    <p>Science Teacher</p>
+                    <p>Inspiring curiosity in the world of science.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="../Images/Protress.jpg" alt="Teacher" class="staff-img">
+                    <h3>Robert Wilson</h3>
+                    <p>English Teacher</p>
+                    <p>Fostering love for literature and language.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="../Images/tec.jpg" alt="Counselor" class="staff-img">
+                    <h3>Sarah Brown</h3>
+                    <p>School Counselor</p>
+                    <p>Guiding students through their educational journey.</p>
+                </div>
+                 <div class="staff-card">
+                    <img src="../Images/Reubenna.jpg" alt="Counselor" class="staff-img">
+                    <h3>Reube James</h3>
+                    <p>School Counselor</p>
+                    <p>Guiding students through their educational journey.</p>
+                </div>
+                 <div class="staff-card">
+                    <img src="../Images/poe.jpg" alt="Counselor" class="staff-img">
+                    <h3>Sarrita Poe</h3>
+                    <p>School Counselor</p>
+                    <p>Guiding students through their educational journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo"><img src="../Images/logo.png" alt="" width="90px"></div>
+            <div class="footer-newsletter">
+                <h3>News Letters</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" aria-label="Email" />
+                    <button type="submit" class="btn-primary">Sign In</button>
+                </form>
+            </div>
+            <div class="footer-events">
+                <h3>Up Coming Events</h3>
+                <div class="footer-event-item">
+                    <p>06 Dec 2016 | London, UK</p>
+                    <p>Science In The New Era</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="footer-flickr">
+                <h3>Our Flickr</h3>
+                <div class="flickr-images">
+                    <img src="../Images/Our Flickr1.jpg" alt="Flickr 1" />
+                    <img src="../Images/Our Flickr2.jfif" alt="Flickr 2" />
+                    <img src="../Images/Our Flickr3.jpg" alt="Flickr 3" />
+                    <img src="../Images/Our Flickr4.jpg" alt="Flickr 4" />
+                    <img src="../Images/Our Flickr5.jfif" alt="Flickr 5" />
+                </div>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 All Rights Reserved. Jahzjet Children's Outreact Mission School</p>
+        </div>
+    </footer>
+</body>
+</html>
